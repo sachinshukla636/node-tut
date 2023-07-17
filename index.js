@@ -1,14 +1,7 @@
-const app = require('./app')
+const fs= require('fs');
+//Core module and global module
+// fs.writeFileSync("hello.txt","How to create file using fs module");
 
-console.log(app)
+console.log("Check directory name",__dirname);
 
-console.log(app.x)
-console.log(app.y)
-console.log("Sum is ",app.z());
-
-const arr=[2,4,7,1,3,8,3];
-
-let result=arr.filter((item)=>{
-    return item==3;
-})
-console.log(result);
+console.log("File name :",__filename);
