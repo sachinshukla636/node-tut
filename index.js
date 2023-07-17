@@ -1,7 +1,8 @@
-const fs= require('fs');
-//Core module and global module
-// fs.writeFileSync("hello.txt","How to create file using fs module");
+const http=require('http');
 
-console.log("Check directory name",__dirname);
+//creating server
 
-console.log("File name :",__filename);
+http.createServer((req,res)=>{
+    res.write("<h1>This is Sachin Shukla</h1>");
+    res.end();
+}).listen(4500)
